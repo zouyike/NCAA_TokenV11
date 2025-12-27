@@ -25,3 +25,20 @@ input/*.csv
 # allow explicit small samples (optional)
 !input/sample.smi
 !input/sample_manifest.csv
+
+# safety: never commit big artifacts
+*.tsv
+*.parquet
+*.pkl
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.npy
+
+# keep only samples under input/
+input/*
+!input/.gitkeep
+!input/sample.smi
+!input/sample_manifest.csv
+
