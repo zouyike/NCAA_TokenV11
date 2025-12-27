@@ -1,0 +1,25 @@
+# Token v1.1 rules (template)
+version: v1.1
+
+# fixed pH for CHG computation
+charge:
+  pH: 7.4
+
+# domain constraints (examples; adjust as needed)
+constraints:
+  max_halogen: 2
+  preferred_charge: [neu, zwi]
+
+# rigidity thresholds (examples)
+rigidity:
+  mainchain:
+    high: {min_rings: 2, max_rotatable_bonds: 1}
+    med:  {min_rings: 1, rotatable_bonds_range: [2, 3]}
+  sidechain:
+    # fill with your deterministic rules
+    placeholder: true
+
+# sidechain bulk thresholds (heavy atoms)
+scbulk:
+  small_max: 3
+  med_max: 7

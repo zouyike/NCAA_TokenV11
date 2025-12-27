@@ -1,0 +1,27 @@
+# env / cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.log
+
+# conda/venv
+.env
+.venv/
+venv/
+miniconda*/
+anaconda*/
+
+# outputs / scratch-like
+shards/
+registry/
+logs/
+qc/
+
+# data inputs (keep only small samples if needed)
+input/*.smi
+input/*.txt
+input/*.csv
+
+# allow explicit small samples (optional)
+!input/sample.smi
+!input/sample_manifest.csv

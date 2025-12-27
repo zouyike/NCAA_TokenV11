@@ -1,0 +1,12 @@
+{
+  "MC_patterns": [
+    "α(N-CA-C)",
+    "β(N-CB-CA-C)",
+    "γ(N-CG-CB-CA-C)"
+  ],
+  "BB": ["α", "β", "γ"],
+  "LINK": ["canonical", "sidechain", "alt"],
+  "CHG": ["neu", "pos", "neg", "zwi"],
+  "MCLEN": ["short", "std", "long"],
+  "RIG": ["low", "med", "high"]
+}
